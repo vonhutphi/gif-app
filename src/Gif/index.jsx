@@ -33,15 +33,8 @@ export default function GIFTRENDING() {
             className="gifItem col-6 col-md-4 col-lg-3 mb-3"
             onClick={() => setGif(item.images.original.webp)}
           >
-            <div className="gif">
-              <img
-                // className="gif"
-                src={item.images.original.webp}
-                style={{ width: "100%", height: "100%", borderRadius: "4px" }}
-                alt=""
-              />
-              <div className="gifOverlay"></div>
-            </div>
+            <img className="gif" src={item.images.original.webp} alt="" />
+
             <div
               className="gifTitle"
               style={{
